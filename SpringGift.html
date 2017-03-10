@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>春节大礼包活动</title>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" type="text/css" href="css/SpringFestivalGift.css">
+<script src="js/public-0.0.1.js"></script>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/move.js"></script>
+</head>
+<body>
+<!--主页面-->
+<div class="spr_fes_gift">
+	<header class="spr_head"></header>
+	<p class="time"></p>
+	<div class="surplus clear">
+		<div class="fl red count">
+			<span>8</span>
+			<span>8</span>
+			<span>8</span>
+			<span>8</span>
+			<span>8</span>
+		</div>
+		<div class="share_btn fl">分享</div>
+	</div>
+	<!--礼包卡-->
+	<ul class="card_list clear">
+		<li>
+			<img src="images/SpringFestivalGift/beimian.png" alt="背面" class="fanmian">
+			<img src="images/SpringFestivalGift/bag0.png" alt="超级大礼包" class="zhengmian">
+		</li>
+		<li>
+			<img src="images/SpringFestivalGift/beimian.png" alt="背面" class="fanmian">
+			<img src="images/SpringFestivalGift/bag1.png" alt="迎春大礼包" class="zhengmian">
+		</li>
+		<li>
+			<img src="images/SpringFestivalGift/beimian.png" alt="背面" class="fanmian">
+			<img src="images/SpringFestivalGift/bag2.png" alt="小聚周边" class="zhengmian">
+		</li>
+		<li>
+			<img src="images/SpringFestivalGift/beimian.png" alt="背面" class="fanmian">
+			<img src="images/SpringFestivalGift/bag3.png" alt="小聚周边" class="zhengmian">
+		</li>
+		<li>
+			<img src="images/SpringFestivalGift/beimian.png" alt="背面" class="fanmian">
+			<img src="images/SpringFestivalGift/bag4.png" alt="" class="zhengmian">
+		</li>
+		<li>
+			<img src="images/SpringFestivalGift/beimian.png" alt="背面" class="fanmian">
+			<img src="images/SpringFestivalGift/bag5.png" alt="超级大礼包" class="zhengmian">
+		</li>
+	</ul>
+	<div class="begain_btn">开始抽奖</div>
+	<div class="footer clear">
+		<a href="javascript:;" class="rule fl">活动规则&Gt;</a>
+		<span class="ft_text fl">还剩<span class="surplus_num">3</span>次抽奖机会</span>
+		<a href="javascript:;" class="record fr">抽奖记录&Gt;</a>
+	</div>
+</div>
+<!--弹窗-->
+<!--活动规则-->
+<div class="active_rule">
+	<h2>活动规则</h2>
+	<div class="rule_list">
+		<h3>活动规则</h3>
+		<ul>
+			<li>1、银卡及以上用户，每天都有一次免费抽奖机会，且此抽奖机会不能累加到次日</li>
+			<li>2、点击分享，成功邀请1名注册用户，可额外获得1次抽奖机会。（机会可进行累计哦）</li>
+			<li>3、所有实物奖品将在1月21日统一发出</li>
+			<li>4、获得实物的用户如在1月20日24时前仍未填写地址，将视为自动放弃领奖</li>
+		</ul>
+	</div>
+	<div class="close_btn"></div>
+</div>
+
+<!--抽奖记录-->
+<div class="record_list">
+	<h2>抽奖记录</h2>
+	<ul class="list">
+		<li class="clear">
+			<span class="fl time1">10-01 10:01</span>
+			<span class="fr typper">迎春大礼包</span>
+		</li>
+		<li class="clear">
+			<span class="fl time1">10-01 10:01</span>
+			<span class="fr typper">迎礼包</span>
+		</li>
+	</ul>
+	<div class="close_btn_box">
+		<div class="close_btn"></div>
+	</div>
+</div>
+
+<!--点击后的弹窗-->
+<div class="tc_mb">
+	<div class="tc_close"></div>
+	<!--填写地址-->
+	<div class="address address1">
+		<div class="header1"></div>
+		<div class="add_box">
+			<p>快来填下地址吧！</p>
+			<div class="add_address">填写地址</div>
+		</div>
+	</div>
+
+	<!--未登录-->
+	<div class="address no_login">
+		<div class="header1"></div>
+		<div class="add_box">
+			<p>登录后才能参加哦！</p>
+			<div class="add_address1 add_address">知道啦</div>
+		</div>
+	</div>
+
+	<!--判断银卡会员-->
+	<div class="address tc_yinka">
+		<div class="header1"></div>
+		<div class="add_box">
+			<p>升级为银卡就可免费抽取哦~</p>
+			<div class="add_address1 add_address">知道啦</div>
+		</div>
+	</div>
+	
+	<!--活动未开始-->
+	<div class="address tc_begain">
+		<div class="header1"></div>
+		<div class="add_box">
+			<p>活动还未开始哦</p>
+			<div class="add_address1 add_address">知道啦</div>
+		</div>
+	</div>
+
+	<!--活动结束-->
+	<div class="address tc_end">
+		<div class="header1"></div>
+		<div class="add_box">
+			<p>活动已结束</p>
+			<div class="add_address1 add_address">知道啦</div>
+		</div>
+	</div>
+
+	<!--分享邀请-->
+	<div class="address tc_share">
+		<div class="header1"></div>
+		<div class="add_box">
+			<p>分享邀请1名好友就能再抽一次</p>
+			<div class="add_address tc_share_btn">去分享</div>
+		</div>
+	</div>
+
+	<!--获得500积分-->
+	<div class="jifen jifen_500" style="display: none;">
+		<div class="header1"></div>
+		<div class="jifen_box">
+			<p>恭喜你！抽到了500积分</p>
+			<p class="yellow">分享邀请一个好友还能再抽一次哦！</p>
+			<span class="line"></span>
+			<img src="images/SpringFestivalGift/500fen.png" alt="500积分">
+			<div class="btn_share">分享给好友</div>
+		</div>
+	</div>
+	<!--获得50积分-->
+	<div class="jifen jifen_50" style="display: none;">
+		<div class="header1"></div>
+		<div class="jifen_box">
+			<p>恭喜你！抽到了50积分</p>
+			<p class="yellow">分享邀请一个好友还能再抽一次哦！</p>
+			<span class="line"></span>
+			<img src="images/SpringFestivalGift/50fen.png" alt="500积分">
+			<div class="btn_share">分享给好友</div>
+		</div>
+	</div>
+	<!--超级大礼包-->
+	<div class="super_bag libao" style="display: none;">
+		<div class="header1"></div>
+		<div class="jifen_box">
+			<p>恭喜你！抽到了超级礼包</p>
+			<p class="yellow">赶快去朋友圈炫耀下吧！</p>
+			<span class="line"></span>
+			<img src="images/SpringFestivalGift/chaojilibao.png" alt="500积分" class="imag1">
+			<p class="things">聚爱财独家定制: 红包1套、春联3对、 <br/>福字3张、台历1本、小聚玩偶、神秘礼物 </p>
+			<div class="btn_share">去晒我的春节大礼包</div>
+		</div>
+	</div>	
+	<!--迎春大礼包-->
+	<div class="spring_bag libao" style="display: none;">
+		<div class="header1"></div>
+		<div class="jifen_box">
+			<p>恭喜你！抽到了超级礼包</p>
+			<p class="yellow">赶快去朋友圈炫耀下吧！</p>
+			<span class="line"></span>
+			<img src="images/SpringFestivalGift/yingchunlibao.png" alt="500积分" class="imag2">
+			<p class="things">聚爱财独家定制<br/>红包1套、春联3对、福字3张、台历1本</p>
+			<div class="btn_share">去晒我的春节大礼包</div>
+		</div>
+	</div>
+	<!--小聚周边-->
+	<div class="ju_side ju_side1">
+		<div class="header1"></div>
+		<div class="jifen_box">
+			<p>恭喜你！抽到了小聚周边礼包</p>
+			<p class="yellow">分享邀请一个好友还能再抽一次哦！</p>
+			<span class="line"></span>
+			<img src="images/SpringFestivalGift/zhoubian.png" alt="500积分">
+			<p class="ju_text">聚爱财定制针织帽子1顶</p>
+			<div class="btn_share">分享给好友</div>
+		</div>
+	</div>
+	<!--小聚周边-->	
+	<div class="ju_side ju_side2">
+		<div class="header1"></div>
+		<div class="jifen_box">
+			<p>恭喜你！抽到了小聚周边礼包</p>
+			<p class="yellow">分享邀请一个好友还能再抽一次哦！</p>
+			<span class="line"></span>
+			<img src="images/SpringFestivalGift/zhoubian1.png" alt="500积分">
+			<p class="ju_text">聚爱财定制小聚背包1个</p>
+			<div class="btn_share">分享给好友</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="js/SpingGift.js"></script>
+<script>
+	//点击分享
+	$('.share_btn,.tc_share_btn,.btn_share').on('touchend',function(){
+		window.location.href='gift_share.html';
+	});
+	//总次数赋值
+	var num=86421;
+	var num1=parseInt(num/10000),
+		num2=parseInt((num%10000)/1000),
+		num3=parseInt(((num%10000)%1000)/100),
+		num4=parseInt((((num%10000)%1000)%100)/10),
+		num5=parseInt((((num%10000)%1000)%100)%10);
+	var text=
+			'<span>'+num1+'</span>'+
+			'<span>'+num2+'</span>'+
+			'<span>'+num3+'</span>'+
+			'<span>'+num4+'</span>'+
+			'<span>'+num5+'</span>';
+	$('.count').html(text);
+</script>
+</html>
